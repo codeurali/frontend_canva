@@ -1,0 +1,32 @@
+{
+  "name": "frontend_canva",
+  "version": "1.0.0",
+  "description": "frontend project starter pack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "sass --watch scss:css",
+    "min": "sass --style=compressed style.css",
+    "prefix": "postcss css/style.css --use autoprefixer -o css/style.css",
+    "watch": "npm run scss && npm run prefix && npm run min",
+    "minify": "uglifycss css/style.css > css/style.min.css",
+    "build": "npm run prefix && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeurali/frontend_canva.git"
+  },
+  "author": "Ali Taggaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeurali/frontend_canva/issues"
+  },
+  "homepage": "https://github.com/codeurali/frontend_canva#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.7",
+    "uglifycss": "0.0.29"
+  }
+}
